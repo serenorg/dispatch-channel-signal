@@ -1,12 +1,14 @@
 # channel-signal
 
+> Development moved to [`dispatch-plugins`](https://github.com/serenorg/dispatch-plugins/tree/main/channels/signal). Version 0.2.0 is the final standalone release. Existing tags and release assets remain available for current installations.
+
 A [Dispatch](https://github.com/serenorg/dispatch) channel plugin for Signal, using the native Rust [presage](https://github.com/whisperfish/presage) client.
 
 **No Docker. No signal-cli. No external daemon.** The plugin is a single Rust binary that owns its own Signal session on disk and talks directly to Signal's servers over WebSocket. It ships with a built-in `--link` subcommand that pairs the plugin as a secondary device via QR code scanned from the Signal app on your phone.
 
 > This plugin links against `presage`, which is licensed under AGPL-3.0. The `channel-signal` binary is therefore distributed under AGPL-3.0.
 
-This repository is the source of truth for the first-party Signal channel plugin. The main `dispatch-plugins` repository keeps only a pointer README plus catalog metadata so Signal remains discoverable without carrying its dependency graph inside the standard plugin workspace.
+This repository preserves the standalone release history. The current source, catalog metadata, and release process are in `dispatch-plugins`.
 
 ## Scope
 
